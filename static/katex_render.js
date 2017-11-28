@@ -1,19 +1,13 @@
 // taken from: https://xuc.me/blog/katex-and-jekyll/
 
 $(document).ready(function(){
-    $("script[type='math/tex; mode=display']").replaceWith(
-      function(){
+    $("script[type='math/tex']").replaceWith(function() {
         var tex = $(this).text();
-        return "<div class=\"equation\">" + 
-               katex.renderToString("\\displaystyle "+tex) +
-               "</div>";
+        return katex.renderToString(tex, {displayMode: false});
     });
     
-    $("script[type='math/tex']").replaceWith(
-      function(){
-        var tex = $(this).text();
-        return "<span class=\"inline-equation\">" + 
-               katex.renderToString(tex) +
-               "</span>";
+    $("script[type='math/tex; mode=display']").replaceWith(function() {
+        var tex = $(this).html();
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
     });
 })
