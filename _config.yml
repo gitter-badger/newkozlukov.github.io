@@ -1,0 +1,22 @@
+title: NEKozlukov
+email: nekozlukov@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+    Noch ein [weiterer] [Serge] Kozlukov.<br/>
+    A place for notes on learning math,
+    naive opinions and inappropriate proclamations.
+social_link: twitter
+social_username: nekozlukov
+twitter_username: nekozlukov
+github_username:  nekozlukov
+
+# Urls
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://nekozlukov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink:        pretty
+
+# Build settings
+markdown: kramdown
+highlighter:      pygments
+theme: jekyll-swiss
+plugins:
+  - jekyll-feed
