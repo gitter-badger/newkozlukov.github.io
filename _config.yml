@@ -16,6 +16,8 @@ permalink:        pretty
 
 # Build settings
 markdown: kramdown
+kramdown:
+    math_engine: mathjax
 highlighter: rouge
 theme: jekyll-swiss
 plugins:
