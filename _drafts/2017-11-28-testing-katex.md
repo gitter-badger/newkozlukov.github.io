@@ -15,3 +15,7 @@ They aren't automagically placed on separate lines
 Look, 'tis really faster than mathjax:
 $$x(t) = e^{tA(t)}x_0 + \int_0^t e^{(t-s)A}f(s)\mathrm{d}s.$$
 
+* * *
+
+UPD: Screw it, I don't have time to make it work properly.
+I'll stick with mathjax.
