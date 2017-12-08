@@ -2,7 +2,7 @@
 layout: category-post
 title: (Re-)interpreting Marx
 tags: communism, marx, class struggle
-categories: social
+categories: [drafts, social]
 ---
 
 I cannot identify myself as a communist
