@@ -1,0 +1,124 @@
+---
+title: "CONF2017: The method of similar operators in the study of spectra of the adjacency matrices of graphs"
+categories: drafts
+layout: slides
+slides_theme: white
+---
+
+<section>
+    <h2>The method of similar operators in the study of spectra of the adjacency matrices of graphs</h2>
+
+    {% include my_contacts.html %}
+</section>
+
+<section data-markdown>
+    ### Structure of the talk
+
+    *   Which graphs exactly?
+    *   Which spectra?
+    *   Why it matters?
+    *   What's the method of similar operators?
+    *   What are the results?
+</section>
+
+<section>
+    <section data-markdown>
+        ### Which graphs?
+
+        A "graph" hereafter is a simple directed graph
+        with the finite set of vertices $V$
+        and the set of directed edges $E \subset V^2$.
+    </section>
+    <section data-markdown>
+        Such a graph is uniquely defined by its *adjacency matrix*
+        $$A = (a_{ij}),\ i,j{=}\overline{1,N},$$
+
+        where $a_{ij}$
+        is the number of directed edges
+        from vertex $i$ to vertex $j$
+        and $N = \mathrm{card}V$ is the number of vertices.
+    </section>
+</section>
+<section data-markdown>
+    ### Which spectra?
+
+    We are interested in
+    -   the spectrum of the adjacency matrix $A$,
+    -   the spectra of *generalized adjacency matrices*,
+    -   and the spectra of transition matrices of random walks.
+
+    We study in an abstract setting
+    the spectra of the Kronecker products
+    of matrices.
+</section>
+<section>
+    <section data-markdown>
+        ### The spectrum of the adjacency matrix
+    
+        Is defined by the equation
+        $$Ax = \lambda x,\ x\neq 0,\ \lambda\in\mathbb{C}.$$
+    
+        Corresponds to the eigenvector centrality (stay tuned) and more.
+    </section>
+    <section>
+        <h3>Why?</h3>
+        <h4>1. Eigenvector centrality</h4>
+
+        <p>Consider a problem of ranking
+        scientific papers or web-pages
+        that reference each other.</p>
+        <ol>
+        <li class="fragment">The more links to a page the greater importance</li>
+        <li class="fragment">The more important referrers the greater importance</li>
+        <li class="fragment">Iterate</li>
+        <li class="fragment">$$x_j = c \sum_i a_{ki} x_k$$</li>
+        </ol>
+    </section>
+    <section>
+        <p>In more convenient form:
+        $$A^{\mathrm{T}}x = \lambda x.$$</p>
+    </section>
+</section>
+<section>
+    <h3>Generalized adjacency matrices</h3>
+
+    <p>The <i>generalized</i> adjacency matrices
+    are defined as arbitrary linear combinations of</p>
+    
+    <ul>
+    <li>the adjacency matrix $A$,</li>
+    <li>the identity matrix $E$,</li>
+    <li>the all-ones matrix
+        $J = 
+            \begin{pmatrix}
+            1 & \cdots & 1 \\
+            \vdots & \ddots & \vdots \\
+            1 & \cdots & 1
+            \end{pmatrix}.$
+    </li>
+    </ul>
+
+    <p>Such matrices naturally arise in several stochastic models.</p>
+</section>
+<section>
+    <h3>Transition matrices</h3>
+
+    <p>Let $D=\mathrm{diag}(d_1,\ldots d_N)$
+    be the out-degree matrix,
+    i.e. $d_i =  \sum_{1\leq j \leq N} a_{ij}$.</p>
+    <p>Then the matrix $AD^{-1}$ is the transition matrix
+    of a markovian random walk on the graph</p>
+</section>
+<section>
+    <section>
+        <h3>Kronecker products</h3>
+    </section>
+    <section>
+        <h3>NEPS</h3>
+    </section>
+</section>
+<section>
+    <section>
+        <h3>The method of similar operators</h3>
+    </section>
+</section>
