@@ -22,43 +22,49 @@ slides_theme: white
 </section>
 
 <section>
-    <section data-markdown>
-        ### Which graphs?
-
+    <section>
+        <h3>Which graphs?</h3>
+        <p>
         A "graph" hereafter is a simple directed graph
-        with the finite set of vertices $V$
+        with the finite set of vertices $V=\left\{1,\ldots,N\right\}$
         and the set of directed edges $E \subset V^2$.
+        </p>
     </section>
-    <section data-markdown>
-        Such a graph is uniquely defined by its *adjacency matrix*
+    <section>
+        <p>
+        Such a graph is uniquely defined by its <i>adjacency matrix</i>
         $$A = (a_{ij}),\ i,j{=}\overline{1,N},$$
-
         where $a_{ij}$
         is the number of directed edges
-        from vertex $i$ to vertex $j$
-        and $N = \mathrm{card}V$ is the number of vertices.
+        from vertex $j$ to vertex $i$.
+        Note the inversion of indices.
+        </p>
     </section>
 </section>
-<section data-markdown>
-    ### Which spectra?
+<section>
+    <h3>Which spectra?</h3>
 
-    We are interested in
-    -   the spectrum of the adjacency matrix $A$,
-    -   the spectra of *generalized adjacency matrices*,
-    -   and the spectra of transition matrices of random walks.
-
+    <p>
+        We are interested in
+        <ul>
+        <li>the spectrum of the adjacency matrix $A$</li>
+        <li>and the spectra of transition matrices.</li>
+        </ul>
+    </p>
+    <p>
     We study in an abstract setting
     the spectra of the Kronecker products
     of matrices.
+    </p>
 </section>
 <section>
-    <section data-markdown>
-        ### The spectrum of the adjacency matrix
-    
+    <section>
+        <h3>The spectrum of the adjacency matrix</h3>
+        <p>
         Is defined by the equation
         $$Ax = \lambda x,\ x\neq 0,\ \lambda\in\mathbb{C}.$$
-    
         Corresponds to the eigenvector centrality (stay tuned) and more.
+        </p>
     </section>
     <section>
         <h3>Why?</h3>
@@ -68,46 +74,52 @@ slides_theme: white
         scientific papers or web-pages
         that reference each other.</p>
         <ol>
-        <li class="fragment">The more links to a page the greater importance</li>
+        <li>The more links to a page the greater importance</li>
         <li class="fragment">The more important referrers the greater importance</li>
         <li class="fragment">Iterate</li>
-        <li class="fragment">$$x_j = c \sum_i a_{ki} x_k$$</li>
+        <li class="fragment">$$x_j = c \sum_i a_{ik} x_k$$</li>
         </ol>
     </section>
     <section>
         <p>In more convenient form:
-        $$A^{\mathrm{T}}x = \lambda x.$$</p>
+        $$A x = \lambda x.$$</p>
+        <p>For the importances to be non-negative
+        a principal eigenvector is chosen.</p>
+        <p>That is one corresponding to the largest (the Perron-Frobenius) eigenvalue.</p>
     </section>
 </section>
 <section>
-    <h3>Generalized adjacency matrices</h3>
+    <h3>Random surfer interpretation</h3>
 
-    <p>The <i>generalized</i> adjacency matrices
-    are defined as arbitrary linear combinations of</p>
-    
-    <ul>
-    <li>the adjacency matrix $A$,</li>
-    <li>the identity matrix $E$,</li>
-    <li>the all-ones matrix
-        $J = 
-            \begin{pmatrix}
-            1 & \cdots & 1 \\
-            \vdots & \ddots & \vdots \\
-            1 & \cdots & 1
-            \end{pmatrix}.$
-    </li>
-    </ul>
-
-    <p>Such matrices naturally arise in several stochastic models.</p>
+    <p>An alternative approach to define eigenvector centrality</p>
+    <p class="fragment">Consider an agent visiting a web page
+    and then randomly following of the links</p>
+    <p class="fragment">It's a markovian random walk with the probability
+    of transition from state (web-page) $j$
+    to state $i$ of $p_{ij} = \frac{a_{ij}}{D_j}$.
+    <br/>
+    Here $D_j = \sum_k a_{kj}$ is the out-degree of the node $j$.</p>
 </section>
 <section>
-    <h3>Transition matrices</h3>
+    <h3>Random surfer interpretation</h3>
 
-    <p>Let $D=\mathrm{diag}(d_1,\ldots d_N)$
-    be the out-degree matrix,
-    i.e. $d_i =  \sum_{1\leq j \leq N} a_{ij}$.</p>
-    <p>Then the matrix $AD^{-1}$ is the transition matrix
-    of a markovian random walk on the graph</p>
+    <p>
+    Let $D=\mathrm{diag}(d_1,\ldots d_N)$.</p>
+    <p class="fragment">
+    Then $D^{-1}A$ is the (column-stochastic)
+    transition matrix of this process.</p>
+    <p class="fragment">
+    Its Perron-Frobenius eigenvalue is $1$.
+    It has the only corresponding eigenvector
+    $$x = D^{-1}A x$$
+    which defines a stationary distribution.</p>
+    <p class="fragment">
+    Interpretation:
+    the amount of time a random surfer would spend in each node</p>
+</section>
+<section>
+    <h3>Convex combinations</h3>
+
 </section>
 <section>
     <section>
