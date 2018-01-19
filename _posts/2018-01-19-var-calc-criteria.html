@@ -1,0 +1,27 @@
+---
+layout: post
+category: cheat
+title: Variational calculus, criteria (INPROGRESS)
+---
+
+Consider a general problem
+\[ J(x) = \int_{t_0}^{t_1} f_0(t, x(t), \dot x(t) \mathrm{d}t +
+\Phi_0(t_0, t_1, x(t_0), x(t_1)) \longrightarrow \inf, \]
+subject to
+\[ \Phi(t_0, t_1, x(t_0), x(t_1)) = 0, \]
+\[ x\in \mathrm{PC}^{(1)}(\mathbb{R}, \mathbb{R}^n). \]
+
+Automagically reduces to optimal control problem.
+
+<h2>Euler's equation</h2>
+
+<h2>Legendre's criterion</h2>
+\[ \frac{\partial^2}{\partial u^2} H(t, \cdots)\left.\right\vert_{x_\star, u_\star} \geq 0 \]
+or equivalently:
+\[ \lambda_0 \frac{\partial^2}{\partial {\dot x}^2} f_0(t, \cdots) \geq 0\ \text{at}
+\ x_\star, \dot x_\star. \]
+
+<h2>Weierstrass's criterion</h2>
+\[ \mathcal{I}(u) \geq \mathcal{I}(v) + \langle \mathcal{I}^\prime(v), u \rangle \]
+
+<h2>Jacobi's criterion</h2>
