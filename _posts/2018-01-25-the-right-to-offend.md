@@ -72,7 +72,7 @@ rather than for strict'n'rigid boundary conditions.
 
 Had Tanya been "provoking"? Her Instagramm says so. And hell she had right to!
 Did Artyom have right to feel offended? Why, yes! And it's perfectly fine! The
-only problem here is that unfortunately Artyom broke. And I'm sorry for both of
-them. Now what could've prevented him breaking? I say a healthy society!
-But in post-soviet Russian you've only got a toxic hypocrite filth.
-I stop now and say no more.
+only problem here is that unfortunately Artyom broke. I can totally see why he
+did and I'm sorry for both of them. Now what could've prevented him breaking? I
+say a healthy society! But in post-soviet Russian you've only got a toxic
+hypocrite filth. I stop now and say no more.
