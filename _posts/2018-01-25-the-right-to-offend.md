@@ -1,5 +1,5 @@
 ---
-layout: category-post
+layout: post
 category: social
 title: The Right to Offend
 ---

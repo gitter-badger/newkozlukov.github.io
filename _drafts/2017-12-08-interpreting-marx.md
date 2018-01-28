@@ -1,5 +1,5 @@
 ---
-layout: category-post
+layout: post
 title: (Re-)interpreting Marx
 tags: communism, marx, class struggle
 categories: [drafts, social]
