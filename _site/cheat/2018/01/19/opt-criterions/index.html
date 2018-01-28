@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible"
+      content="IE=edge,chrome=1">
+<title>
+    NEWKozlukov
+</title>
+<meta name="viewport"
+      content="width=device-width">
+
+<!-- CSS -->
+<link rel="stylesheet"
+      href="/assets/style.css" />
+<link rel="icon"
+      type="image/x-icon"
+      href="/favicon.ico" />
+
+<!-- Extensions -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
+
+</head>
+
+
+    <body>
+        <div class="container header">
+    <div class="row">
+        <header>
+            <div class="four columns">
+                <a href="https://newkozlukov.github.io">
+                    <img class="header-icon" src="https://newkozlukov.github.io/icon.png" />
+                </a>
+            </div>
+            <div class="eight columns">
+                <a href="https://newkozlukov.github.io">
+                    <h1 class="header-title">NEWKozlukov</h1>
+                </a>
+                <h4>Noch ein weiterer [Serge] Kozlukov.<br/>
+A place for notes on learning math,
+naive opinions and inappropriate proclamations.
+</h4>
+            </div>
+        </header>
+    </div>
+    <div class="row" >
+        <div class="four columns" ><p></p></div>
+        
+        <div class="one column" >
+            <a href="https://twitter.com/newkozlukov">
+                
+                <img style="width: 2em;" src="https://newkozlukov.github.io/assets/social-twitter.svg" />
+                
+            </a>
+        </div>
+        
+        <div class="one column" >
+            <a href="https://github.com/newkozlukov">
+                
+                <img style="width: 2em;" src="https://newkozlukov.github.io/assets/social-github.svg" />
+                
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+        <hr/>
+
+        <div class="container">
+            <div class="row" >
+                <div class="two columns">
+                    <div class="container" >
+    <ul class="navbar">
+        
+        
+        <li><a href="/about/">About</a></li>
+        
+        
+        
+        <li><a href="/cheat/">Cheatsheets</a></li>
+        
+        
+        
+        <li><a href="/drafts/">Drafts</a></li>
+        
+        
+        
+        
+        
+        <li><a href="/lang/">Languages</a></li>
+        
+        
+        
+        <li><a href="/math/">Math</a></li>
+        
+        
+        
+        <li><a href="/reading/">Reading</a></li>
+        
+        
+        
+        <li><a href="/social/">Social</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+
+                </div>
+                <div class="eight columns">
+                    <p>
+    Cheatsheet for Zadorozhnii' optimal control course.
+    So the credit for whatever's correct goes to Zadorozhnii
+    and all the errors are to be considered mine.
+    Some refernces (specific to the course mentioned):
+    <ol>
+        <li>J. Warga: https://libgen.pw/item/detail/id/1199754?id=1199754</li>
+    </ol>
+</p>
+
+<p>
+    Consider a general problem
+    \[ J(x, u, t_0, t_1) = \int_{t_0}^{t_1} f_0(t, x(t), u(t) \mathrm{d}t +
+    \Phi_0(t_0, t_1, x(t_0), x(t_1)) \longrightarrow \inf, \]
+    subject to
+    \[ \dot x(t) = f(t, x(t), u(t)), \]
+    \[ \Phi(t_0, t_1, x(t_0), x(t_1)) = 0. \]
+    \[ u\in\mathrm{PC}(\mathbb{R}, \mathbb{R}^n). \]
+</p>
+
+<h2>Lagrangian</h2>
+<p>
+    As usual we use the Lagrange's multiplier method
+    in order to reduce the bounded problem to an unbounded one:
+    \[ L(u, \lambda_0, \lambda, \mu)
+    = \lambda_0 J(x, u)
+    + \int_{t_0}^{t_1} \langle \lambda(t),
+    \left[ f(t, x(t), u(t)) - \dot x(t)\right]
+    \rangle \mathrm{d}t
+    + \langle \mu, \Phi(t_0, t_1, x(t_0), x(t_1)).\]
+
+</p>
+
+<h2>Hamiltonian</h2>
+<p>
+    Let us introduce the helper functions with the formulas
+    \[ H(t, x(t), u(t), \lambda_0, \lambda(t), \mu)
+    = \lambda_0 f_0(t, x(t), u(t))
+    + \langle \lambda(t), f(t) \rangle, \]
+    \[ l(t_0, t_1, x(t_0), x(t_1), \mu)
+    = \langle \mu, \Phi(t_0, t_1, x(t_0), x(t_1)) \rangle. \]
+    Now we can rewrite the Lagrangian:
+    \[ L(\cdots)
+    = \int_{t_0}^{t_1} \left[
+    H(\cdots)
+    + \langle \dot \lambda(t), x(t) \rangle
+    \right] \mathrm{d}t
+    + l(\cdots)
+    + \langle \lambda(t_0), x(t_0) \rangle
+    - \langle \lambda(t_1), x(t_1) \rangle. \]
+    Here
+    \[
+    \langle \lambda(t_0), x(t_0) \rangle
+    - \langle \lambda(t_1), x(t_1) \rangle =
+    \int_{t_0}^{t_1} \langle \lambda(t), -\dot x(t)\rangle \mathrm{d}t. \]
+</p>
+
+
+                </div>
+                <div class="two columns">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="container" >
+    <h4>NEWKozlukov</h4>
+    <p>Noch ein weiterer [Serge] Kozlukov.<br/>
+A place for notes on learning math,
+naive opinions and inappropriate proclamations.
+</p>
+</div>
+
+    </body>
+</html>
