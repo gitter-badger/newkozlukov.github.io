@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible"
+      content="IE=edge,chrome=1">
+<title>
+    NEWKozlukov
+</title>
+<meta name="viewport"
+      content="width=device-width">
+
+<!-- CSS -->
+<link rel="stylesheet"
+      href="/assets/style.css" />
+<link rel="icon"
+      type="image/x-icon"
+      href="/favicon.ico" />
+
+<!-- Extensions -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
+
+</head>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="/assets/revealjs/css/reveal.css">
+        <link rel="stylesheet" href="/assets/revealjs/css/theme/black.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="/assets/revealjs/lib/css/zenburn.css">
+
+        <script>
+// Printing and PDF exports
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/revealjs/css/print/pdf.css' : '/assets/revealjs/css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>                                                      	
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+Trying to integrate RevealJS into blog
+</section>
+<section>
+    Definitely don't want to dig deep
+    <p class="fragment">And remember, I f-ing hate WEB.</p>
+    <p class="fragment">So I just want it working, that's all.</p>
+</section>
+
+
+
+            </div>
+        </div>
+
+
+		<script src="/assets/revealjs/lib/js/head.min.js"></script>
+        <script src="/assets/revealjs/js/reveal.js"></script>
+        <script>
+Reveal.initialize({
+    history: true,
+    math: {
+        mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js',
+        config: 'TeX-AMS_SVG'  // See http://docs.mathjax.org/en/latest/config-files.html
+    },
+
+    dependencies: [
+        { src: '/assets/revealjs/plugin/math/math.js', async: true },	
+        { src: '/assets/revealjs/plugin/markdown/marked.js', async: true},
+        { src: '/assets/revealjs/plugin/markdown/markdown.js', async: true},
+        { src: '/assets/revealjs/plugin/notes/notes.js', async: true },
+        { src: '/assets/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+]                                                            	
+});                                                              	
+        </script>
+    </body>
+</html>
