@@ -1,25 +1,23 @@
 title: NEWKozlukov
 email: newkozlukov@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: |
     Noch ein weiterer [Serge] Kozlukov.<br/>
     A place for notes on learning math,
     naive opinions and inappropriate proclamations.
-social_link: twitter
-social_username: newkozlukov
-twitter_username: newkozlukov
-github_username:  newkozlukov
+social_links:
+  -
+    url: https://twitter.com/newkozlukov
+    ico: /assets/social-twitter.svg
+  -
+    url: https://github.com/newkozlukov
+    ico: /assets/social-github.svg
 
 # Urls
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://newkozlukov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-permalink:        pretty
+base_url: ""
+url: "https://newkozlukov.github.io"
+permalink: pretty
 
-# Build settings
-markdown: kramdown
-kramdown:
-    math_engine: mathjax
-highlighter: rouge
-theme: jekyll-swiss
+theme: jekyll-theme-newtype
 plugins:
   - jekyll-feed
 show_drafts: true

@@ -4,9 +4,6 @@ category: social
 title: The Right to Offend
 ---
 
-
-##  Background
-
 It's January 25, 2018 as I'm writing this little essay.
 A few days ago a terrible news struck the Russian students.
 Some mental kid (Artyom, BMSTU) had in cold blood strangled to death, stabbed
