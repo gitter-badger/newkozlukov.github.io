@@ -5,17 +5,19 @@ title: Object model
 ---
 
 My story with OOP begins in childhood when I was struggling with my despair in
-school. Long story short, I got my hands dirty with dotnet and I liked it at the
+school. Long story short, I got my hands dirty with dotnet, and I liked it at the
 moment. By the end of school years I'd tried lots of things: from network
-programming with sockets and games with XNA to UI with WPF to webdev with aspnet mvc.
-I was messing around mostly and it was all rather childish.
-But the thing is I got quite familiar with the environment and concepts and I
-loved it. MSDN was my dogmata. Most importantly, I considered myself an adept of OOP.
+programming with sockets to games with XNA to UI with WPF to webdev with
+aspnet mvc.
+I was messing around mostly, and it was all rather childish.
+But the thing is I got quite familiar with the environment and concepts.
+I loved it. MSDN was my holybook. Most importantly, I considered myself an adept
+of OOP.
 **Now I reproach all of that** and here's why.
 
 I will try and not rant on
  [Microsoft](https://www.gnu.org/proprietary/malware-microsoft.html)
- and [proprietary software](https://www.gnu.org/proprietary/proprietary.html).
+ and the [proprietary software](https://www.gnu.org/proprietary/proprietary.html).
 Instead I'll focus on OOP.
 
 I can see two basic approaches to the Object Model or rather two different
@@ -38,7 +40,7 @@ The second way is a way of the Dark Side. It's a model of *interacting
 entities*. Here objects are mysterious *entities* that *act* with their
 functions on their *states*. They can share behaviour with the use of
 *inheritance*. I'm not mentioning the principles like polymorphism here as they
-aren't really specific to this model.
+aren't really specific to nor distinguishing for this model.
 
 I don't imply that local interactions is a bad idea: actually it's a great idea,
 but you must take care of... convergence of some sort.
@@ -92,3 +94,14 @@ betwixt application and the presentation layer. For what it is that frontend
 expects from the application? A REST api for WEB or plain datastructures for a
 standalone application that relies on data-bindings.
 Not a "bunch of interacting entities" at all
+
+Basically the coders are writing lots of code which is never really used.
+That happens because it is convenient to follow the routine: write resource
+classes, write the services, generate the sql and the REST endpoints, write some
+tests, proceed as usual. This process doesn't really involve thinking.
+Convenient indeed. The only caveat: people produce erroneous
+unmaintanable shite which somehow keeps working as long as an employer keeps
+paying the employee. It may seem feasible given that modern society is all
+built on deprecated, unsustainable, and self-destructive methods.
+It may so far but there's a line. We haven't reached it yet and we
+can't see it, but that doesn't mean it isn't here.
