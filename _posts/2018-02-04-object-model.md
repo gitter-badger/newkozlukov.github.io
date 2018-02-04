@@ -95,7 +95,15 @@ expects from the application? A REST api for WEB or plain datastructures for a
 standalone application that relies on data-bindings.
 Not a "bunch of interacting entities" at all
 
-Basically the coders are writing lots of code which is never really used.
+The only part left is the domain logic the vast part of which consists of
+all kinds of constraints. Ideally we'd like to write just a specification of
+these constraints and then use it for both validation and input-suggestions.
+
+To sum up: the object model isn't how we store data, nor how we serve data to
+the end-user nor even how we'd like to modify and validate data.
+
+Basically the coders are writing lots of code which doesn't produce any
+additional value.
 That happens because it is convenient to follow the routine: write resource
 classes, write the services, generate the sql and the REST endpoints, write some
 tests, proceed as usual. This process doesn't really involve thinking.
