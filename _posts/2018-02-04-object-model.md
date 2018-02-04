@@ -1,6 +1,6 @@
 ---
 layout: post
-category: [drafts, programming]
+category: [programming]
 title: Object model
 ---
 
@@ -58,7 +58,7 @@ can be replaced with
 [composition](https://en.wikipedia.org/wiki/Composition_over_inheritance)
 or even stripped away.
 The main problem though is that it's tempting to *use inheritance to describe
-hierarchies*, although there's no practical use in it.
+hierarchies*, although there's no practical reason to.
 A classic example is that of a square and a rectangle: the first is a particular
 case of the latter but the `setWidth()` of a Square should either violate what
 we expect from a Rectangle or return a non-square.
@@ -105,3 +105,11 @@ paying the employee. It may seem feasible given that modern society is all
 built on deprecated, unsustainable, and self-destructive methods.
 It may so far but there's a line. We haven't reached it yet and we
 can't see it, but that doesn't mean it isn't here.
+
+## When object model makes sense
+
+Of course "interacting entities" can be useful too.
+For example they are sure useful when it comes to modeling a system that
+consists of... stateful interacting components! Usually that happens at
+at lower layers; at he level of architecture. E.g. in the components that manage
+the lifecycle of an application. Yet even there the functional approach is coming.
