@@ -1,8 +1,8 @@
 ---
 layout: post
-categories: [drafts, math, programming]
+categories: [math, programming]
 tags: [math, programming, datamodeling]
-title: Relational model
+title: Relational model (INPROGRESS)
 ---
 
 It isn't justified to call a relational model what people usually mean when the
